@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- nav_graph.xml -->
+    <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:startDestination="@id/coffeeShopsFragment">
+
+        <fragment
+            android:id="@+id/coffeeShopsFragment"
+            android:name="com.example.baguioguide.CoffeeShopsFragment"
+            android:label="Coffee Shops" />
+
+        <fragment
+            android:id="@+id/thriftShopsFragment"
+            android:name="com.example.baguioguide.ThriftShopsFragment"
+            android:label="Thrift Shops" />
+
+        <fragment
+            android:id="@+id/famousPlacesFragment"
+            android:name="com.example.baguioguide.FamousPlacesFragment"
+            android:label="Famous Places" />
+    </navigation>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
